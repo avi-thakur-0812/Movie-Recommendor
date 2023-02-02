@@ -81,11 +81,12 @@ model_knn = NearestNeighbors(metric = 'cosine', algorithm = 'brute')
 
 model_knn.fit(combined_matrix)
 
+'''
 combined_matrix = combined_matrix.todense()
 combined_matrix = nm.asarray(combined_matrix)
 neigh = NearestNeighbors(n_neighbors=10)
 neigh.fit(combined_matrix)
-
+'''
 
 
 def get_recommendations(movie_id, X, model):
